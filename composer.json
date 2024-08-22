@@ -7,7 +7,7 @@
     "extra": {
         "ifcastle-installer": {
             "package": {
-                "name": "monolog",
+                "name": "logger",
                 "bootloaders": [
                     "IfCastle\\Monolog\\Bootloader"
                 ]
