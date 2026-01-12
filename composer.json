@@ -1,0 +1,39 @@
+{
+    "name": "ifcastle/monolog",
+    "description": "Monolog integration with IfCastle.",
+    "type": "ifcastle-package",
+    "license": "MIT",
+    "keywords": ["log", "ifcastle", "monolog"],
+    "extra": {
+        "ifcastle-installer": {
+            "package": {
+                "name": "logger",
+                "bootloaders": [
+                    "IfCastle\\Monolog\\Bootloader"
+                ]
+            }
+        },
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "IfCastle\\Monolog\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IfCastle\\Monolog\\": "./tests"
+        }
+    },
+    "require": {
+        "ifcastle/application": "^0.8",
+        "monolog/monolog": "^3.7",
+        "ifcastle/exceptions": "^5.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.60",
+        "amphp/php-cs-fixer-config": "^2.1"
+    }
+}
